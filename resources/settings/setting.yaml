@@ -1,3 +1,5 @@
 URL_PATH: https://training-platform2.doppio-tech.com
+default_browser:  chromium
+headless: false
 default_timeout: 5
 default_retry: 3

@@ -1,0 +1,6 @@
+translation:
+  login_message:
+    login_failed: "Invalid credentials."
+    login_success_toast:  "Signed in successfully"
+  product:
+    ceramic_mug:  Ceramic Mug
