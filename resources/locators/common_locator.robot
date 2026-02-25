@@ -1,0 +1,11 @@
+*** Variables ***
+${common_locator.txt_nav_bar_search}        xpath=//header//input[@id="nav-search-input"]
+${common_locator.btn_nav_bar_search}        xpath=//header//input[@id="nav-search-input"]/following-sibling::button[@id="btn-search"]
+${common_locator.btn_nav_bar_cart}          xpath=//header//nav/a[@id="btn-cart"]
+${common_locator.btn_nav_bar_account}       xpath=//header//nav/div[@id="nav-account"]
+${common_locator.btn_nav_bar_sign_in}       xpath=//header//nav/div[@id="nav-account"]/div[@id="nav-account-menu"]
+${common_locator.btn_nav_bar_language}      xpath=//header//nav/div[@id="nav-lang"]
+${common_locator.btn_nav_bar_language_menu} xpath=//header//nav/div[@id="nav-lang"]//span[contains(text(),"@#string@#")]
+${common_locator.popup_toast}               xpath=//div[@role="status"]/div/following-sibling::div[contains(text(),"@#string@#")]
+${common_locator.lbl_suggest_item}          xpath=//div[@id="nav-search-suggest"]//a/span[contains(text(),"@#string@#")]
+${common_locator.btn_confirm}               xpath=//button[contains(text(), "${translation.button_name.confirm}")]
