@@ -4,3 +4,11 @@ translation:
     login_success_toast:  "Signed in successfully"
   product:
     ceramic_mug:  Ceramic Mug
+  button_name:
+    remove: Remove
+    confirm:  Confirm
+  title:
+    remove_coupon: Remove Coupon
+  summary_price:
+    subtotal: Subtotal
+    shipping: Shipping

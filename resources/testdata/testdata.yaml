@@ -3,3 +3,5 @@ TC_001:
   password: Weerapat
   product_color:  Gray
   product_quantity: 3
+  total_price:  305
+  item: [Ceramic Mug]

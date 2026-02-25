@@ -3,7 +3,7 @@ Resource     ${CURDIR}/../resources/import.robot
 Variables    ${CURDIR}/../resources/testdata/testdata.yaml
 
 Test Setup   Default test setup
-
+Test Teardown  Default test teardown
 *** Test Cases ***
 TC_001 Login
     [Documentation]     สามารถค้นหา mug และเพื่มลงตะกร้าสามชิ้นได้สำเร็จและยืนยันว่าราคาถูกต้อง
@@ -19,3 +19,4 @@ TC_001 Login
     ...     quantity=${TC_001.product_quantity}
     ...     color=${TC_001.product_color}
     # ไปท่ีCheckout → ติ๊กทังหมดหากจ;าเป็น ้ → ยืนยันว่าราคาถูกต้อง (subtotal ± discount + shipping = total)
+    cart_feature.Select cart item and verify total price summary  item_list=${TC_001.item}  total_price=${TC_001.total_price}

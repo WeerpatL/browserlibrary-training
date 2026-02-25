@@ -12,8 +12,10 @@ Resource    ${CURDIR}/../keywords/features/login_feature.robot
 Resource    ${CURDIR}/../keywords/features/product_feature.robot
 Resource    ${CURDIR}/../keywords/pages/login_page.robot
 Resource    ${CURDIR}/../keywords/pages/product_page.robot
-
+Resource    ${CURDIR}/../keywords/pages/cart_page.robot
+Resource    ${CURDIR}/../keywords/features/cart_feature.robot
 # locator
 Resource    ${CURDIR}/locators/common_locator.robot
 Resource    ${CURDIR}/locators/login_page_locator.robot
 Resource    ${CURDIR}/locators/product_page_locator.robot
+Resource    ${CURDIR}/locators/cart_page_locator.robot

@@ -8,3 +8,4 @@ ${common_locator.btn_nav_bar_language}      xpath=//header//nav/div[@id="nav-lan
 ${common_locator.btn_nav_bar_language_menu} xpath=//header//nav/div[@id="nav-lang"]//span[contains(text(),"@#string@#")]
 ${common_locator.popup_toast}               xpath=//div[@role="status"]/div/following-sibling::div[contains(text(),"@#string@#")]
 ${common_locator.lbl_suggest_item}          xpath=//div[@id="nav-search-suggest"]//a/span[contains(text(),"@#string@#")]
+${common_locator.btn_confirm}               xpath=//button[contains(text(), "${translation.button_name.confirm}")]

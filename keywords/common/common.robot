@@ -2,6 +2,9 @@
 Default test setup
     common.Open doppee browser
 
+Default test teardown
+    cart_feature.Remove all item from cart
+    common.Close doppee browser
 
 Open doppee browser
     Browser.New browser
@@ -9,6 +12,9 @@ Open doppee browser
     ...     headless=${headless}
     ...     slowMo=0.5s
     Browser.New page    url=${URL_PATH}
+
+Close doppee browser
+    Browser.Close browser
 
 Click nav bar account button
     Browser.Click   selector=${common_locator.btn_nav_bar_account}
@@ -28,3 +34,6 @@ Click suggested item in search bar
     ${locator}=     String.Replace string   string=${common_locator.lbl_suggest_item}   search_for=@#string@#   replace_with=${item}
     Browser.Wait for elements state     selector=${locator}    state=visible
     Browser.Click   selector=${locator}
+
+Click cart icon in nav bar
+    Browser.Click   selector=${common_locator.btn_nav_bar_cart}
