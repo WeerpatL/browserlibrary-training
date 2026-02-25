@@ -10,3 +10,9 @@ Input product quantity
 
 Click add to cart button
     Browser.Click   selector=${product_page_locator.btn_add_to_cart}
+
+Click view detail on given product
+    [Arguments]     ${product_name}
+    ${locator}=     String.Replace string   string=${product_page_locator.btn_view_detail}     search_for=@#string@#     replace_with=${product_name}
+    Browser.Scroll to element   selector=${locator}
+    Browser.Click   selector=${locator}
